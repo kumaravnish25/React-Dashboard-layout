@@ -2,6 +2,8 @@ import React from 'react'
 import 
 { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill}
  from 'react-icons/bs'
+ 
+//  For Imports From Recharts.org
  import 
  { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } 
  from 'recharts';
@@ -9,6 +11,8 @@ import
 
 
 function Home() {
+
+    // default Value For Chart
 
     const data = [
         {
@@ -97,6 +101,9 @@ function Home() {
         {/* For Charts */}
 
         <div className='charts'>
+
+            {/* For SimpleBarchart */}
+
             <ResponsiveContainer width="100%" height="100%">
             <BarChart
             width={500}
@@ -119,9 +126,11 @@ function Home() {
                 </BarChart>
             </ResponsiveContainer>
 
+            {/* For SimpleLineChart */}
+
             <ResponsiveContainer width="100%" height="100%">
                 <LineChart
-                // width={500}
+                width={500}
                 height={300}
                 data={data}
                 margin={{
